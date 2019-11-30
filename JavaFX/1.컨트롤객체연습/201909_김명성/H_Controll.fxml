@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="kr.or.ddit.basic.H_Controller">
+   <center>
+      <VBox spacing="10.0">
+         <children>
+            <HBox spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이 름 :" wrappingWidth="37.0" />
+                  <TextField fx:id="txt" prefHeight="10.0" prefWidth="137.0" />
+               </children>
+            </HBox>
+            <HBox spacing="5.0">
+               <children>
+                  <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="성 별 :" />
+                  <RadioButton fx:id="male" mnemonicParsing="false" selected="true" text="남">
+                     <toggleGroup >
+                        <ToggleGroup fx:id="toggle" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="female" mnemonicParsing="false" text="여" toggleGroup="$toggle" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="취 미 :" />
+                  <CheckBox fx:id="h1" mnemonicParsing="false" text="여행" />
+                  <CheckBox fx:id="h2" mnemonicParsing="false" text="등산" />
+                  <CheckBox fx:id="h3" mnemonicParsing="false" text="독서" />
+                  <CheckBox fx:id="h4" mnemonicParsing="false" text="바둑" />
+                  <CheckBox fx:id="h5" mnemonicParsing="false" text="장기" />
+                  <CheckBox fx:id="h6" mnemonicParsing="false" text="게임" />
+                  <CheckBox fx:id="h7" mnemonicParsing="false" text="테니스" />
+                  <CheckBox fx:id="h8" mnemonicParsing="false" text="배드민턴" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button onAction="#btnClick" fx:id="btn" mnemonicParsing="false" text="보 기" />
+               </children>
+            </HBox>
+            <TextArea fx:id="txtresult" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

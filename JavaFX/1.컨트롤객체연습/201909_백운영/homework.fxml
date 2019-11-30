@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeWork.ControllPractice">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이름 :" >
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="name">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="9.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="성별 :" wrappingWidth="31.59375">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <RadioButton mnemonicParsing="false" text="남" fx:id="gendermale">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="여" fx:id="genderfemale">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="취미 :" wrappingWidth="31.59375">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="12.0" />
+               </HBox.margin>
+            </Text>
+            <CheckBox mnemonicParsing="false" text="여행" fx:id="chk1">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="등산" fx:id="chk2">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="독서" fx:id="chk3">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="바둑" fx:id="chk4">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="장기" fx:id="chk5">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="게임" fx:id="chk6">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="테니스" fx:id="chk7">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="배드민턴" fx:id="chk8">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="8.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" text="보   기" fx:id="btn" onAction="#printbtn">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="300.0" prefWidth="200.0">
+         <children>
+            <TextArea prefHeight="150.0" prefWidth="250.0" fx:id="ta">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+   </children>
+</VBox>

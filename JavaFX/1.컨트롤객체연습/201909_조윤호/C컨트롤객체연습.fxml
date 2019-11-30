@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="kr.or.ddit.basic.C컨트롤객체연습컨트롤러" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이름 :" wrappingWidth="76.59375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txt" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="성별 :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <RadioButton fx:id="male" mnemonicParsing="false" text="남 ">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="female" mnemonicParsing="false" text="여 ">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="취미 :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <CheckBox fx:id="a" mnemonicParsing="false" text="여행 ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="b" mnemonicParsing="false" text="등산">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="c" mnemonicParsing="false" text="독서">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="d" mnemonicParsing="false" text="바둑">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="q" mnemonicParsing="false" text="장기">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="f" mnemonicParsing="false" text="게임">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="g" mnemonicParsing="false" text="테니스">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="h" mnemonicParsing="false" text="배드민턴">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnDan" mnemonicParsing="false" onAction="#btnDanclick" text="보 기">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+      <TextArea fx:id="txtResult" prefHeight="200.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets right="250.0" />
+         </VBox.margin>
+      </TextArea>
+   </children>
+</VBox>
